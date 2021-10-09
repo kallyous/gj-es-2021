@@ -19,7 +19,7 @@ public class ConveyorBeltController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         Debug.Log("Colisão!");
         Rigidbody2D objBody = other.gameObject.GetComponent<Rigidbody2D>();
