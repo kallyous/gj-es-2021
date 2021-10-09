@@ -64,10 +64,4 @@ public class RubyController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
     }
-    
-    public void move (){
-        Vector2 position = rigidbody2d.position;
-        position.y = position.y + 2.0f * 1 * Time.deltaTime;
-        rigidbody2d.MovePosition(position);
-    }
 }
