@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,5 +15,16 @@ public class ConveyorBeltController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Colisão!");
+        Rigidbody2D objBody = other.gameObject.GetComponent<Rigidbody2D>();
+        if (objBody != null)
+        {
+            Vector2 direction = Vector2.right;
+            objBody.AddForce(direction * 300);
+        }
     }
 }
