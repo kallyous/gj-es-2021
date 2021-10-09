@@ -13,7 +13,7 @@ Game jam de estudos em game dev e arte.
 * [Tile Palette 2020](https://docs.unity3d.com/Manual/Tilemap-Palette.html)
 
 **Arte de Jogo**
-
+* [Piskel](https://www.piskelapp.com/)
 * [Sprites & Spritesheets](https://lospec.com/pixel-art-tutorials/tags/sprites)
 * [Tilesets](https://www.youtube.com/watch?v=AM30pMxMWYo)
 
