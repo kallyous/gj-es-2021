@@ -1,0 +1,3 @@
+A pasta "Art Sources" é destinada aos arquivos fonte de arte, em seus formatos originais e editáveis.
+Os arquivos PNG finais devem ir para as devidas sub-pastas de "Assets".
+
