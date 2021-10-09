@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ConveyorBeltController : MonoBehaviour
 {
+    public float force = 1000f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,7 @@ public class ConveyorBeltController : MonoBehaviour
         if (objBody != null)
         {
             Vector2 direction = Vector2.right;
-            objBody.AddForce(direction * 300);
+            objBody.AddForce(direction * force);
         }
     }
 }
