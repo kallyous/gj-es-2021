@@ -16,7 +16,7 @@ public class RubyController : MonoBehaviour
     public Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-    public float charSpeed = 3.0f;
+    public float charSpeed = 2.5f;
 
     // Start is called before the first frame update
     void Start()
