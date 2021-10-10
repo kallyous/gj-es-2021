@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ConveyorBeltController : MonoBehaviour
 {
-    public float force = 1000f;
+    public float force = 100f;
     
     // Start is called before the first frame update
     void Start()
