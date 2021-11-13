@@ -1,20 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthCollectible : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D other)
+    public GameObject pickupEffect;
+    public AudioClip audioClip;
+    
+    private void OnTriggerEnter2D(Collider2D other)
     {
-       RubyController controller = other.GetComponent<RubyController>();
+        RubyController controller = other.GetComponent<RubyController>();
 
-        if (controller != null)
+        if (controller != null && controller.health < controller.maxHealth)
         {
-            if (controller.health < controller.maxHealth)
-            {
-                controller.ChangeHealth(1);
-                Destroy(gameObject);   
-            }
+            GameObject effect = Instantiate(pickupEffect, transform.position, Quaternion.identity);
+            controller.PlaySound(audioClip);
+            controller.ChangeHealth(1);
+            Destroy(gameObject);
         }
     }
 }

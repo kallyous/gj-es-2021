@@ -6,7 +6,6 @@ using UnityEngine;
 public class ConveyorBeltController : MonoBehaviour
 {
     public float force = 100f;
-    private float rotationSpeed = 5f;
     private Vector3 direction = Vector3.up;
     private Vector3 forward;
     private Vector3 position;
